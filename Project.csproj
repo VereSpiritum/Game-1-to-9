@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7F58E7DF-B49C-47A8-858A-767EA25FFB86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Digits.cs" />
+    <Compile Include="Exit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Exit.Designer.cs">
+      <DependentUpon>Exit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Start_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start_form.Designer.cs">
+      <DependentUpon>Start_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Game_over.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Game_over.Designer.cs">
+      <DependentUpon>Game_over.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Levels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Levels.Designer.cs">
+      <DependentUpon>Levels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play_form.Designer.cs">
+      <DependentUpon>Play_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play_form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play_form2.Designer.cs">
+      <DependentUpon>Play_form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Play_form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play_form3.Designer.cs">
+      <DependentUpon>Play_form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Prompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Prompt.Designer.cs">
+      <DependentUpon>Prompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Checking_answer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Checking_answer.Designer.cs">
+      <DependentUpon>Checking_answer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Winner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Winner.Designer.cs">
+      <DependentUpon>Winner.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Exit.resx">
+      <DependentUpon>Exit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play_form3.resx">
+      <DependentUpon>Play_form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Start_form.resx">
+      <DependentUpon>Start_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Game_over.resx">
+      <DependentUpon>Game_over.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Levels.resx">
+      <DependentUpon>Levels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play_form.resx">
+      <DependentUpon>Play_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play_form2.resx">
+      <DependentUpon>Play_form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Prompt.resx">
+      <DependentUpon>Prompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Checking_answer.resx">
+      <DependentUpon>Checking_answer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Winner.resx">
+      <DependentUpon>Winner.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\Mash.webp" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Кнопка.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\form1Background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\True_answer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\false.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Mash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\hurt.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
